@@ -28,14 +28,6 @@ def contact(request):
 
         contact.save()
 
-        # Send email
-        # send_mail(
-        #     'Property Listing Inquiry',
-        #     'There has been an inquiry for ' + listing + '. Sign into the admin panel for more info',
-        #     'loveonlycanada@gmail.com',
-        #     [realtor_email, 'sculltakers111@gmail.com'],
-        #     fail_silently=False
-        # )
 
         messages.success(request, 'Your requset has been sumbitted')
 
